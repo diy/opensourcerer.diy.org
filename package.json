@@ -2,8 +2,8 @@
   "name": "diy-satellite-pages",
   "version": "0.0.1",
   "dependencies": {
-		"connect" : "",
-		"path": ""
+		"connect" : "2.7.2",
+		"path": "0.4.9"
   },
   "engines": {
     "node": "0.8.x",
