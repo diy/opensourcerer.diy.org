@@ -1,12 +1,13 @@
 {
   "name": "diy-satellite-pages",
   "version": "0.0.1",
-  "dependencies": {
-    "express": "2.5.x",
-    "path": "",
-    "filed": "",
-    "tako": ""
-  },
+  "bundleDependencies": [
+    "request",
+    "tako",
+    "filed",
+    "path",
+    "mapleTree"
+  ],
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
