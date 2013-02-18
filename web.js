@@ -1,10 +1,13 @@
-var connect = require('connect')
-var path = require('path')
-var http = require('http')
+var express = require('express');
 
-var htmldir = path.resolve(__dirname, 'attachments')
+var app = express.createServer(express.logger());
 
-var app = connect()
-  .use(connect.static(htmldir,'index.html'))
+app.configure(function(){
+  server.use('/media', express.static(__dirname + '/media'));
+  server.use(express.static(__dirname + '/public'));
+});
 
-http.createServer(app).listen(3000);
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
