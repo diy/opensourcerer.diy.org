@@ -4,7 +4,8 @@
   "dependencies": {
     "express": "2.5.x",
     "path": "",
-    "filed": ""
+    "filed": "",
+    "tako": ""
   },
   "engines": {
     "node": "0.8.x",
