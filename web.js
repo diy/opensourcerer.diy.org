@@ -13,6 +13,8 @@ t.route('/', function (req, resp) {
   filed(path.join(htmldir, 'index.html')).pipe(resp)
 })
 
+t.route('/*').files(htmldir)
+
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
