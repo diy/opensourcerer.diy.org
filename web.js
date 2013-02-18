@@ -1,15 +1,15 @@
-var request = require('request').defaults({json: true})
+var connect = require('connect')
+var http = require('http');
 
-var htmldir = path.resolve(__dirname, 'attachments')
+var app = connect()
+  .use(connect.favicon())
+  .use(connect.logger('dev'))
+  .use(connect.static('public'))
+  .use(connect.directory('public'))
+  .use(connect.cookieParser())
+  .use(connect.session({ secret: 'my secret here' }))
+  .use(function(req, res){
+    res.end('Hello from Connect!\n');
+  });
 
-var request = require('request');
-request('http://www.google.com', function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-    console.log(body) // Print the google web page.
-  }
-})
-
-var port = process.env.PORT || 5000;
-request.listen(port, function() {
-  console.log("Listening on " + port);
-});	
+http.createServer(app).listen(3000);
