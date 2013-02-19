@@ -1,1 +1,2 @@
-require('http').createServer(ecstatic('./attachments')).listen(5000)
+var ecstatic = require('ecstatic')
+var app = require('http').createServer(ecstatic('./')).listen(5000)
