@@ -1,0 +1,24 @@
+@font-face {
+  font-family: ApexRounded;
+  src: url('/fonts/apex-medium.eot');
+  src: url('/fonts/apex-medium.eot') format('embedded-opentype'), url('/fonts/apex-medium.ttf') format('truetype'), url('/fonts/apex-medium.woff') format('woff'), url('/fonts/apex-medium.svg') format('svg');
+  font-weight: normal;
+}
+@font-face {
+  font-family: ApexRounded;
+  src: url('/fonts/apex-bold.eot');
+  src: url('/fonts/apex-bold.eot') format('embedded-opentype'), url('/fonts/apex-bold.ttf') format('truetype'), url('/fonts/apex-bold.woff') format('woff'), url('/fonts/apex-bold.svg') format('svg');
+  font-weight: bold;
+}
+@font-face {
+  font-family: ApexRounded;
+  src: url('/fonts/apex-heavy.eot');
+  src: url('/fonts/apex-heavy.eot') format('embedded-opentype'), url('/fonts/apex-heavy.ttf') format('truetype'), url('/fonts/apex-heavy.woff') format('woff'), url('/fonts/apex-heavy.svg') format('svg');
+  font-weight: 900;
+}
+@font-face {
+  font-family: Icons;
+  src: url('/fonts/diy-regular.eot');
+  src: url('/fonts/diy-regular.eot') format('embedded-opentype'), url('/fonts/diy-regular.ttf') format('truetype'), url('/fonts/diy-regular.woff') format('woff'), url('/fonts/diy-regular.svg#diyregular') format('svg');
+  font-weight: normal;
+}
