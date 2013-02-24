@@ -17,6 +17,12 @@
   font-weight: 900;
 }
 @font-face {
+  font-family: ApexRounded;
+  src: url('/fonts/apexrounded-book.eot');
+  src: url('/fonts/apexrounded-book.eot') format('embedded-opentype'), url('/fonts/apexrounded-book.ttf') format('truetype'), url('/fonts/apexrounded-book.woff') format('woff'), url('/fonts/apexrounded-book.svg') format('svg');
+  font-weight: 900;
+}
+@font-face {
   font-family: Icons;
   src: url('/fonts/diy-regular.eot');
   src: url('/fonts/diy-regular.eot') format('embedded-opentype'), url('/fonts/diy-regular.ttf') format('truetype'), url('/fonts/diy-regular.woff') format('woff'), url('/fonts/diy-regular.svg#diyregular') format('svg');

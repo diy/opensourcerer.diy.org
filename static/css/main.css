@@ -33,7 +33,7 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0;}
-@font-face{font-family:ApexRounded;src:url('../fonts/apexrounded-book.eot?');src:url('../fonts/apexrounded-book.eot?#iefix') format('embedded-opentype'),url('../fonts/apexrounded-book.ttf?2') format('truetype'),url('../fonts/apexrounded-book.woff?2') format('woff'),url('../fonts/apexrounded-book.svg#font') format('svg');font-weight:normal;}code.highlight{white-space:initial;}code.highlight .line{display:block;white-space:nowrap;}
+@font-face{font-family:ApexRounded;src:url('../fonts/apexrounded-book.eot');src:url('../fonts/apexrounded-book.eot') format('embedded-opentype'),url('../fonts/apexrounded-book.ttf') format('truetype'),url('../fonts/apexrounded-book.woff') format('woff'),url('../fonts/apexrounded-book.svg#font') format('svg');font-weight:normal;}code.highlight{white-space:initial;}code.highlight .line{display:block;white-space:nowrap;}
 code.highlight .string{color:#12ae96;}
 code.highlight .string.key{color:#5d5d5d;}
 code.highlight .number{color:#f2a428;}
