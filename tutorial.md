@@ -23,8 +23,8 @@ Since you've just joined GitHub, there won't be much on your account page. Let's
 
 Parts of the page:
 
-1. **Users** Everyone on GitHub is a user. Some users belong to organizations.
-2. **Organization** Organizations have accounts on GitHub, the users who contribute to their code are called **members** and typically are employees or others close to the organization.
+1. **Organization** Companies and organizations have accounts on GitHub to keep their projects together.
+1. **Members** Are the GitHub users that contribute to an organizations projects. They are sometimes employees or others close to the organization. 
 3. **Repository** These are projects on GitHub, they contain all the project's instructions and files. Often people say "repo," short for repository. Public repos are open source! 
 
 On pages that list repos such as an organization's page, you can quickly see the language used in the repo, the number of favorites the repo has and how many people have forked a copy of the repo (we'll talk more about forking later). 
@@ -163,7 +163,7 @@ You should see a list of filenames that look exactly like the files you see on t
 ![cloned files](http://diy-visualpedia.s3.amazonaws.com/cloned-files.png)
 
 ### Connect to Original
-We have one last thing to do. Because this is an open project, we can expect that may others will be doing the same as us: forking, cloning and making changes to the files. We want to make sure we're always working with the most up to date files. To ensure this, we'll connect our local copy to the DIY original so that we can **pull** in the most recent changes before we work on ours. If you go back to the DIY page for [Open-Sourcerer](http://www.github.com/diy/open-sourcerer), just like our fork had an address, this repo has an address too. You'll see the HTTP address near the top middle: `https://github.com/diy/open-sourcerer`. We're going to name this connection *upstream* (because this is where updates will come from).
+We have one last thing to do. Because this is an open project, we can expect that may others will be doing the same as us: forking, cloning and making changes to the files. We want to make sure we're always working with the most up to date files. To ensure this, we'll connect our local copy to the DIY original so that we can **pull** in the most recent changes before we work on ours. If you go back to the DIY page for [Open-Sourcerer](http://www.github.com/diy/open-sourcerer), just like our fork had an address, this repo has an address too. You'll see the HTTP address near the top middle. We're going to name this connection *upstream* (because this is where updates will come from).
 
 > should they type in their username@ here too?
 
@@ -198,7 +198,7 @@ When you're done, save the file. Make sure you keep it saved as a .txt file.
 ### Push Changes
 Now let's add our changes to our forked copy and then submit them to be added to the DIY original file. 
 
-Return to Bash and let's check what changes we've made. Type
+Return to Bash and let's check what changes we've made. Type:
 
     git status
  
@@ -229,7 +229,7 @@ Now we'll add a *message* describing our changes and attach that to our push.
     git commit -m "your description of changes"
 
 ### Push Changes to our Fork
-Now, finally, we'll actually push the file and message to our fork on GitHub. Remember our fork's name is origin (it's our *original* file) and the branch is *master*.
+Now, finally, we'll actually push the file and message to our fork on GitHub. Remember our fork's name is *origin* (it's our original file) and the branch is *master*.
 
     git push origin master    
 
