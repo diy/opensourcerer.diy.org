@@ -21,7 +21,7 @@ var _           = require('underscore'),
  */
 function compile (config) {
     // Markdown
-    var raw         = fs.readFileSync(__dirname + '/tutorial.md').toString();
+    var raw         = fs.readFileSync(__dirname + '/installgit.md').toString();
     var content     = markdown.toHTML(raw);
 
     // Handlebars

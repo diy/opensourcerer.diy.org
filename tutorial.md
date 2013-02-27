@@ -32,7 +32,7 @@ On pages that list repos such as an organization's page, you can quickly see the
 ![GitHub repo](http://diy-visualpedia.s3.amazonaws.com/github-repo-01.png)
 
 ### Explore the Repo
-Go to [GitHub.com/diy](http://github.com/diy) and click the repo called [Open-Sourcerer](http://www.GitHub.com/diy/open-sourcerer). Now you're on the page for this repo. You can see the files inside the repo, the readme.md gives you instructions for using the project and you can see when changes have been made to the files, these are called *commits*.
+Go to [GitHubub.com/diy](http://github.com/diy) and click the repo called [open-sourcerer](http://www.GitHub.com/diy/open-sourcerer). Now you're on the page for this repo. You can see the files inside the repo, the readme.md gives you instructions for using the project and you can see when changes have been made to the files, these are called *commits*.
 
 ![diy repo](http://diy-visualpedia.s3.amazonaws.com/git-repo-page-01.png)
 
