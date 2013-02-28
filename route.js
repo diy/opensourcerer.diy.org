@@ -21,7 +21,7 @@ var _           = require('underscore'),
  */
 function compileIndex (pageData) {
     // Markdown
-    var raw         = fs.readFileSync(__dirname + '/installgit.md').toString();
+    var raw         = fs.readFileSync(__dirname + '/intro.md').toString();
     var content     = markdown.toHTML(raw);
 
     // Handlebars
