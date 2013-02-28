@@ -9,22 +9,25 @@
 
         <link rel="shortcut icon" href="http://diy-visualpedia.s3.amazonaws.com/favicon.ico"/>
         <link href="//d10yyh63llk3uw.cloudfront.net/css/www/stylesheet.gz.css?d539ab895b" rel="stylesheet" type="text/css" />
-        <link href="./css/fonts.css" rel="stylesheet" type="text/css" />
+        <link href="/css/fonts.css" rel="stylesheet" type="text/css" />
     </head>
 <style>
 body, html {background: #fff; height: 100%; text-align: left;}
+#nav h1 {font-weight: weight; font-size: 34px;}
 #sidebar {position: absolute; max-width: 300px; background-color: #E8E8E8; text-align: left; padding: 35px 40px; height: 100%;}
-#sidebar .btn.intro {font-size: 16px; padding: 8px 10px 4px;}
-#sidebar .list-title {padding: 15px 0px 15px 40px; font-weight: normal; color: #b9b9b9; font-size: 22px;}
+.intro-ol {list-style: none; margin: 0px;}
+#sidebar .list-title {padding: 15px 0px 15px 40px; font-weight: normal; color: #808080; font-size: 22px;}
 #challenge-list {background-color: #fff; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); border-radius: 4px; padding: 20px 20px 20px 0px}
 #challenge-list ol {font-family: ApexRounded, sans-serif; font-size: 22px; color: #333;}
 #challenge-list li a {padding: 0 0 1px 0; border-bottom: 3px solid #ffe14c; color: #333; line-height: 38px;}
+#challenge-list li.active a {padding: 0 0 1px 0; border-bottom: 3px solid #3290d8; color: #3290d8; line-height: 38px;}
+#challenge-list li.active {color: #3290d8;}
 #wrapper {position: relative;}
 #main {margin-left: 380px;}
 #theContent img {max-width: 100%;}
-#theContent {width: 900px; padding: 40px;}
-a {font-weight: bold;}
-#theContent h1 {padding: 0 0 3px 0; border-bottom: 5px solid #ffe14c; color: #333; margin-bottom: 31px; font-size: 40px; display: inline-block; font-weight: normal;}
+#theContent {width: 900px; padding: 100px 40px;}
+#theContent a {font-weight: bold;}
+#theContent h1 {padding: 0 0 17px 0; border-bottom: 5px solid #ffe14c; color: #333; margin-bottom: 55px; font-size: 53px; display: inline-block; font-weight: normal;}
 pre {padding: 10px 10px; outline: none; border: none; border-radius: 2px; background: #f6f6f6;}
 code {color: #555555; font-size: 12px; font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);}
 code {display: inline; margin: 0px; padding: 0px; background-color: transparent; border: none; border-radius: 0px;}
@@ -39,31 +42,26 @@ code {display: inline; margin: 0px; padding: 0px; background-color: transparent;
 
                 <ul id="nav">
                     
-                    <li class="portfolio"><a href="//diy.org/goldenrod">Portfolio</a></li>
-                    
-                    <li class="skills active"><a href="//diy.org/skills">Skills</a></li>
-                    <li class="stream"><a href="//diy.org/stream">Stream</a></li>
-                    <li class="explore"><a href="//diy.org/explore">Explore</a></li>
-                    <li class="settings"><a href="/goldenrod/account">Settings</a></li>
-                    
-                    
+                    <h1>DIY Guides / Open Sourcerer</h1>
+                   
                 </ul>
             </div>
         </header>   
         <div id="wrapper"> 	
 	    	<aside id="sidebar">
-	    		<button class="intro btn btn-focus">Introduction</button>
-	    		<h3 class="list-title">Challenges</h3>
 	    		<div id="challenge-list">
 		    		<ol>
-		    			<li id="itemCheck"><a href="">Open Source Projects</a></li>
-		    			<li><a href="">Github & Repo</a></li>
-		    			<li><a href="">Fork on Github</a></li>
-		    			<li><a href="">Clone in Bash</a></li>
-		    			<li><a href="">Push in Bash</a></li>
-		    			<li><a href="">Pull Request</a></li>
-		    			<li><a href="">Issue Report</a></li>
-		    			<li><a href="">Add Name to Readme</a></li>
+		    			<ol class="intro-ol">
+		    				<li class="intro-item"><a href="">Introduction</a></li>
+		    			</ol>
+		    			<li class="c1"><a href="/challenge/1">Open Source Projects</a></li>
+		    			<li class="c2"><a href="/challenge/2">Github & Repo</a></li>
+		    			<li class="c3"><a href="/challenge/3">Fork on Github</a></li>
+		    			<li class="c4"><a href="/challenge/4">Install Git</a></li>
+		    			<li class="c5"><a href="/challenge/5">Clone in Bash</a></li>
+		    			<li class="c6"><a href="/challenge/6">Push in Bash</a></li>
+		    			<li class="c7"><a href="/challenge/7">Pull Request</a></li>
+		    			<li class="c8"><a href="/challenge/8">Issue Report</a></li>
 		    		</ol>
 	    		</div>
 	    	</aside>
