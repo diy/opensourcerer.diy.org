@@ -76,7 +76,7 @@ function activeState (page, id) {
 module.exports = function (router, pageData) {
     // Init router
     var route = router();
-    var cache = lru()
+    var cache = lru(20)
 
     // Root
     var root = compileIndex(pageData);
@@ -91,8 +91,7 @@ route.get('/challenge/{num}', function(req, res) {
     if (cachePile) {
         res.writeHead(200)
         res.end(cachePile)
-    }
-    else {
+    } else {
         var page = makePage(pageData, num) 
         var pageCheerio = $.load(page)
         activeState(pageCheerio, num)
