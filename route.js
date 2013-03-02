@@ -19,7 +19,7 @@ var _           = require('underscore'),
 /**
  * Compile template
  */
-function compileIndex (pageData) {
+function compileIndex (environment) {
     // Markdown
     var raw         = fs.readFileSync(__dirname + '/intro.md').toString();
     var content     = markdown.toHTML(raw);
@@ -29,7 +29,7 @@ function compileIndex (pageData) {
     var template    = handlebars.compile(source);
 
     // Compose and return
-    var provider    = _.extend(pageData, {
+    var provider    = _.extend(environment, {
         content: content
     });
     return template(provider);
@@ -38,7 +38,7 @@ function compileIndex (pageData) {
 /**
  * Make a Page
  */
-function makePage (pageData, num) {
+function makePage (environment, num) {
     // Markdown
     var raw         = fs.readFileSync(__dirname + '/' + num + '.md').toString();  
     var content     = markdown.toHTML(raw);  
@@ -48,7 +48,7 @@ function makePage (pageData, num) {
     var template    = handlebars.compile(source);
 
     // Compose and return
-    var provider    = _.extend(pageData, {
+    var provider    = _.extend(environment, {
         content: content
     });
     return template(provider);
@@ -73,34 +73,34 @@ function activeState (page, id) {
 /**
  * Export
  */
-module.exports = function (router, pageData) {
-    // Init router
+module.exports = function (router, environment) {
+    // Init router and cache
     var route = router();
-    var cache = lru(20)
+    var cache = lru(20);
 
     // Root
-    var root = compileIndex(pageData);
+    var root = compileIndex(environment);
     route.get('/', function (request, response) {
         response.writeHead(200);
         response.end(root);
     });
 
-route.get('/challenge/{num}', function(req, res) {
-    var num = req.params.num; // ex: if the path is /foo/bar, then base = foo
-    var cachePile = cache.get(num)
-    if (cachePile) {
-        res.writeHead(200)
-        res.end(cachePile)
-    } else {
-        var page = makePage(pageData, num) 
-        var pageCheerio = $.load(page)
-        activeState(pageCheerio, num)
-        page = pageCheerio.html()
-        cache.set(num, page)
-        res.writeHead(200)
-        res.end(page)
-    }
-});
+    route.get('/challenge/{num}', function(req, res) {
+        var num = req.params.num; 
+        var cachePile = cache.get(num)
+        if (cachePile) {
+            res.writeHead(200)
+            res.end(cachePile)
+        } else {
+            var page = makePage(environment, num) 
+            var pageCheerio = $.load(page)
+            activeState(pageCheerio, num)
+            page = pageCheerio.html()
+            cache.set(num, page)
+            res.writeHead(200)
+            res.end(page)
+        }
+    });
 
     // Static
     route.get('/css/*', serveStatic);

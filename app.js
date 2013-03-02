@@ -18,16 +18,16 @@ var http    = require('http'),
 /**
  * Server
  */
-var pageData  = {
+var environment  = {
     host:       process.env.HOST || argv.h,
     port:       Number(process.env.PORT) || argv.p,
     production: process.env.NODE_ENV === 'production'
 };
-var route   = require('./route.js')(router, pageData),
+var route   = require('./route.js')(router, environment),
     app     = http.createServer(route);
 
 /**
  * Listen
  */
-app.listen(pageData.port);
-console.log('Listening at %s on port %d', pageData.host, pageData.port);
+app.listen(environment.port);
+console.log('Listening at %s on port %d', environment.host, environment.port);
