@@ -13,7 +13,7 @@ var _           = require('underscore'),
     fs          = require('fs'),
     filed       = require('filed'),
     handlebars  = require('handlebars'),
-    markdown    = require('markdown').markdown,
+    marked      = require('marked'),
     lru         = require('lru-cache');          
 
 /**
@@ -22,7 +22,7 @@ var _           = require('underscore'),
 function compileIndex (environment) {
     // Markdown
     var raw         = fs.readFileSync(__dirname + '/intro.md').toString();
-    var content     = markdown.toHTML(raw);
+    var content     = marked(raw);
 
     // Handlebars
     var source      = fs.readFileSync(__dirname + '/static/index.html').toString();
@@ -41,7 +41,7 @@ function compileIndex (environment) {
 function makePage (environment, num) {
     // Markdown
     var raw         = fs.readFileSync(__dirname + '/content/' + num + '.md').toString();  
-    var content     = markdown.toHTML(raw);  
+    var content     = marked(raw);  
 
     // Handlebars
     var source      = fs.readFileSync(__dirname + '/static/index.html').toString();
