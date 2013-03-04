@@ -1,0 +1,13 @@
+/* Ignore system files */
+.DS_Store
+
+/* Ignore BBEdit and/or Sublime project files */
+*.bbprojectd*
+*.sublime-project*
+
+/* Ignore nodemon */
+.monitor
+
+/* Ignore NPM */
+npm-debug.log
+/node_modules
