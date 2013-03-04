@@ -40,7 +40,7 @@ function compileIndex (environment) {
  */
 function makePage (environment, num) {
     // Markdown
-    var raw         = fs.readFileSync(__dirname + '/' + num + '.md').toString();  
+    var raw         = fs.readFileSync(__dirname + '/content/' + num + '.md').toString();  
     var content     = markdown.toHTML(raw);  
 
     // Handlebars
