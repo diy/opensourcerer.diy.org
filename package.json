@@ -12,7 +12,7 @@
     "marked": "~0.2.8",
     "underscore": "~1.4.4",
     "lru-cache": "2.2.2",
-    "cheerio": "0.10.7",
+    "cheerio": "0.10.7"
   },
   "devDependencies": {},
   "optionalDependencies": {},
