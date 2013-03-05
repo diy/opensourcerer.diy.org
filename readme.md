@@ -1,7 +1,4 @@
-# Hi!
-![opensourcerer badge](https://d1973c4qjhao9m.cloudfront.net/patches/opensourcerer_253x292.png)
-
-## Simple Version
+## Simply Speaking
 
 These are the files for the web guide DIY built to walk DIY makers through learning Git and GitHub and become a part of the awesome open source community. 
 
