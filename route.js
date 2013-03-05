@@ -14,33 +14,14 @@ var _           = require('underscore'),
     filed       = require('filed'),
     handlebars  = require('handlebars'),
     marked      = require('marked'),
-    lru         = require('lru-cache');          
-
-/**
- * Compile template
- */
-function compileIndex (environment) {
-    // Markdown
-    var raw         = fs.readFileSync(__dirname + '/intro.md').toString();
-    var content     = marked(raw);
-
-    // Handlebars
-    var source      = fs.readFileSync(__dirname + '/static/index.html').toString();
-    var template    = handlebars.compile(source);
-
-    // Compose and return
-    var provider    = _.extend(environment, {
-        content: content
-    });
-    return template(provider);
-}
+    lru         = require('lru-cache'); 
 
 /**
  * Make a Page
  */
-function makePage (environment, num) {
+function makePage (environment, subDir, num ) {
     // Markdown
-    var raw         = fs.readFileSync(__dirname + '/content/' + num + '.md').toString();  
+    var raw         = fs.readFileSync(__dirname + subDir + num + '.md').toString();  
     var content     = marked(raw);  
 
     // Handlebars
@@ -79,7 +60,7 @@ module.exports = function (router, environment) {
     var cache = lru(20);
 
     // Root
-    var root = compileIndex(environment);
+    var root = makePage(environment, '/intro', '');
     route.get('/', function (request, response) {
         response.writeHead(200);
         response.end(root);
@@ -92,7 +73,7 @@ module.exports = function (router, environment) {
             res.writeHead(200)
             res.end(cachePile)
         } else {
-            var page = makePage(environment, num) 
+            var page = makePage(environment, '/content/', num ) 
             var pageCheerio = $.load(page)
             activeState(pageCheerio, num)
             page = pageCheerio.html()
