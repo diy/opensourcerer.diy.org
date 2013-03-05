@@ -1,3 +1,6 @@
+# Open Sourcerer Guide
+Web Guide for DIY's [Open Sourcerer Skill](http://www.diy.org/skills/opensourcerer). 
+
 ## Simply Speaking
 
 These are the files for the web guide DIY built to walk DIY makers through learning Git and GitHub and become a part of the awesome open source community. 
