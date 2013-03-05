@@ -1,164 +1,37 @@
-#top.outer {
-  z-index: 5;
-  height: auto;
-  margin: 0;
-  position: relative;
-  color: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.05);
-  font-family: ApexRounded, sans-serif;
-  font-weight: normal;
-  background-color: #38cdff;
-  background-image: -moz-linear-gradient(left, #6b4aaa, #38cdff);
-  background-image: -ms-linear-gradient(left, #6b4aaa, #38cdff);
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#6b4aaa), to(#38cdff));
-  background-image: -webkit-linear-gradient(left, #6b4aaa, #38cdff);
-  background-image: -o-linear-gradient(left, #6b4aaa, #38cdff);
-  background-image: linear-gradient(left, #6b4aaa, #38cdff);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b4aaa', endColorstr='#38cdff', GradientType=1);
-  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-}
-#top.outer a:active {
-  margin-top: 1px !important;
-  margin-bottom: -1px !important;
-}
-#top.outer #navbar {
-  padding: 24px 0 15px 0;
-}
-#top.outer #navbar #logo {
-  float: left;
-  text-indent: 100%;
-  white-space: nowrap;
-  text-indent: 1000em;
-  overflow: hidden;
-  display: block;
-  background-image: url('/images/www/logo/60x63.png');
-  width: 60px;
-  height: 63px;
-  margin-top: -3px;
-}
-#top.outer #navbar #logo:active {
-  margin-top: -2px !important;
-}
-#top.outer #navbar #nav-user {
-  margin: 15px 0 0 25px;
-  float: left;
-  font-size: 16px;
-  line-height: 16px;
-}
-#top.outer #navbar #nav-user .btn {
-  font-size: 16px;
-  padding: 6px 15px 4px;
-  margin: 0 5px;
-}
-#top.outer #navbar #nav-user .btn.signin:before {
-  content: '<';
-  font-family: Icons;
-  margin: 0 5px 0 0;
-}
-#top.outer #navbar #nav-user .btn.join:before {
-  content: 'T';
-  font-family: Icons;
-  margin: 0 5px 0 0;
-}
-#top.outer #navbar #nav-user .user {
-  display: block;
-  margin: -5px 0 9px 0;
-}
-#top.outer #navbar #nav-user .user a {
-  background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.12);
-  zoom: 1;
-  background-color: transparent\9;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1f000000, endColorstr=#1f000000)";
-  font-size: 19px;
-  line-height: 20px;
-  color: #fff;
-  padding: 2px 5px 0 5px;
-  margin-left: -5px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-#top.outer #navbar #nav-user .user .label {
-  font-size: 13px;
-  display: block;
-  margin: -19px 0 6px 0;
-  text-transform: uppercase;
-}
-#top.outer #navbar #nav-user .signout {
-  color: #38a9ff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-#top.outer #navbar #nav-user .signout:hover {
-  color: #289cf5;
-}
-#top.outer #navbar #nav {
-  float: right;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  *zoom: 1;
-}
-#top.outer #navbar #nav:before,
-#top.outer #navbar #nav:after {
-  display: table;
-  content: "";
-}
-#top.outer #navbar #nav:after {
-  clear: both;
-}
-#top.outer #navbar #nav li {
-  position: relative;
-  height: 100px;
-  width: 90px;
-  float: left;
-  font-size: 18px;
-  margin: -15px 0;
-  text-align: center;
-}
-#top.outer #navbar #nav a {
-  position: relative;
-  display: inline-block;
-  padding: 55px 0 0 0;
-  color: #396a9a;
-  color: rgba(0, 0, 0, 0.35);
-  *display: inline;
-  /* IE7 inline-block hack */
+  /* overrides */
 
-  *zoom: 1;
-}
-#top.outer #navbar #nav a:before {
-  color: rgba(0, 0, 0, 0.3);
-}
-#top.outer #navbar #nav a:hover {
-  color: #34608c;
-  color: rgba(0, 0, 0, 0.45);
-}
-#top.outer #navbar #nav a:hover:before {
-  color: rgba(0, 0, 0, 0.4);
-}
-#top.outer #navbar #nav li.active {
-  margin: -15px 0;
-  width: 105px;
-  background: #535b98;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
-}
-#top.outer #navbar #nav li.active:after {
-  content: ' ';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: url(/images/www/ui_nav_jaggies.png?4) top left repeat-x;
-}
-#top.outer #navbar #nav li.active a,
-#top.outer #navbar #nav li.active a:before {
-  color: #fff;
-}
+  body, html {background: #fff; height: 100%; text-align: left;}
+
+  #nav h1 {font-weight: normal; font-size: 34px;}
+
+  /* sidebar */
+  #sidebar {position: absolute; max-width: 300px; background-color: #E8E8E8; text-align: left; padding: 35px 40px; height: 100%;}
+  
+  .intro-ol {list-style: none; margin: 0px;}
+  #challenge-list .intro-ol li a {padding: 0 0 1px 0; border-bottom: none; color: #333; line-height: 38px;}
+  
+  #sidebar .list-title {padding: 15px 0px 15px 40px; font-weight: normal; color: #808080; font-size: 22px;}
+  
+  #challenge-list {background-color: #fff; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); border-radius: 4px; padding: 20px 20px 20px 0px;}
+  #challenge-list ol {font-family: ApexRounded, sans-serif; font-size: 20px; color: #333;}
+  #challenge-list li a {padding: 0 0 1px 0; border-bottom: 3px solid #ffe14c; color: #333; line-height: 38px;}
+  #challenge-list li.active a {padding: 0 0 1px 0; border-bottom: 3px solid #3290d8; color: #3290d8; line-height: 38px;}
+  #challenge-list li.active {color: #3290d8;}
+ 
+  /* main body */
+  #wrapper {position: relative;}
+  
+  #main {margin-left: 380px; min-height: 800px; margin-right: 40px;}
+ 
+  #theContent img {max-width: 100%;}
+  #theContent {max-width: 900px; padding: 40px;}
+  #theContent a {font-weight: bold;}
+  #theContent h1 {padding: 0 0 5px 0; border-bottom: 4px solid #ffe14c; color: #333; margin-bottom: 32px; font-size: 44px; display: inline-block; font-weight: normal; line-height: auto;}
+  #theContent h4 {font-size: 14px; border-left: 4px solid #ff0; padding: 10px 20px; margin-top: 30px;}
+ 
+ /* others */
+  pre {padding: 10px 10px; outline: none; border: none; border-radius: 2px; background: #f6f6f6;}
+  code {color: #555555; font-size: 14px; font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);}
+  code {display: inline; margin: 0px; padding: 0px; background-color: transparent; border: none; border-radius: 0px;}
+ 
+  iframe {width: 100%; min-height: 500px; padding: 10px 0 20px 0;}

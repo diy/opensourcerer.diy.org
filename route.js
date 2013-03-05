@@ -88,10 +88,10 @@ module.exports = function (router, environment) {
     route.get('/challenge/{num}', function(req, res) {
         var num = req.params.num; 
         var cachePile = cache.get(num)
-        if (cachePile) {
-            res.writeHead(200)
-            res.end(cachePile)
-        } else {
+        // if (cachePile) {
+        //     res.writeHead(200)
+        //     res.end(cachePile)
+        // } else {
             var page = makePage(environment, num) 
             var pageCheerio = $.load(page)
             activeState(pageCheerio, num)
@@ -99,7 +99,7 @@ module.exports = function (router, environment) {
             cache.set(num, page)
             res.writeHead(200)
             res.end(page)
-        }
+        // }
     });
 
     // Static
