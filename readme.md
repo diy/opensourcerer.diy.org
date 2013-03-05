@@ -1,1 +1,16 @@
-##Hi!
+# Hi!
+
+## Simple Version
+These are the files for the web guide DIY built to walk DIY makers through learning Git and GitHub and become a part of the awesome open source community. 
+
+The raw markdown files for each challenge can be found in the [contents folder](https://github.com/diy/opensourcerer.diy.org/tree/master/content).
+
+## DIY Makers - Help us Make the Guide Better!
+Leave Issue Reports to let us know were things weren't clear. Thanks! 
+
+## Technically Speaking
+This is a node.js app that serves up static files from a cache of markdown files compiled into HTML. Woo! 
+
+### To Run
+
+    node app.js
