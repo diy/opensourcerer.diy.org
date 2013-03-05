@@ -2,6 +2,8 @@
 
   body, html {background: #fff; height: 100%; text-align: left;}
 
+  #wrapper {position: relative; height: 100%;}
+
   #nav h1 {font-weight: normal; font-size: 34px;}
 
   /* sidebar */
@@ -19,9 +21,7 @@
   #challenge-list li.active {color: #3290d8;}
  
   /* main body */
-  #wrapper {position: relative;}
-  
-  #main {margin-left: 380px; min-height: 800px; margin-right: 40px;}
+  #main {margin-left: 380px; margin-right: 40px;}
  
   #theContent img {max-width: 100%;}
   #theContent {max-width: 900px; padding: 40px;}
