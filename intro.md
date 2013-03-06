@@ -6,7 +6,7 @@ We created this guide to walk you step by step through using Git and Github - re
 
 To complete the challenge you'll learn the tools of the trade, **Git** and **GitHub** and edit DIY's open source projects!
 
-* **Git** is software that helps manage your code. It allows you see the changes that you've made, called *diffs*, and undo changes when you've saved mistakes! 
+* **Git** is software that helps manage your code. It allows you to see the changes that you've made, called *diffs*, and undo changes when you've saved mistakes! 
 * **GitHub** makes Git social. With GitHub you can put your code online and share it with others. Users can create new projects and work together on projects -- making something better, together. Like the Petigraffe below!
 
 You'll find video instructions as well as written ones - and by the end of the challenges you'll know how to suggest your own improvements to this guide!
