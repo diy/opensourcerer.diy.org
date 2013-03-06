@@ -1,6 +1,6 @@
   /* overrides */
   html {height: 100%;}
-  body, html {background: #fff; text-align: left;}
+  body, html {background: url('http://diy-visualpedia.s3.amazonaws.com/one.png') repeat-y; background-size: 380px; text-align: left;}
 
 
   #wrapper {position: relative; height: 100%;}
@@ -8,7 +8,7 @@
   #nav h1 {font-weight: normal; font-size: 34px;}
 
   /* sidebar */
-  #sidebar {position: absolute; max-width: 300px; background-color: #E8E8E8; text-align: left; padding: 35px 40px; height: 100%;}
+  #sidebar {position: absolute; width: 300px; background-color: #E8E8E8; text-align: left; padding: 35px 40px; height: 100%;}
   
   .intro-ol {list-style: none; margin: 0px;}
   #challenge-list .intro-ol li a {padding: 0 0 1px 0; border-bottom: none; color: #333; line-height: 38px;}
