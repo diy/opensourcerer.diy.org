@@ -2,7 +2,7 @@
 
 ## DIY's First Guide
 
-We created this guide to walk you step by step through using Git and Github - really useful tools in open source. At the same time, it is walking you through completing all of the challenges for the [Open Sourcerer Skill](http://www.diy.org/skills/open-sourcerer)!
+We created this guide to walk you step by step through using Git and Github - really useful tools in open source. At the same time, it is walking you through completing all of the challenges for the [Open Sourcerer Skill](http://www.diy.org/skills/opensourcerer)!
 
 To complete the challenge you'll learn the tools of the trade, **Git** and **GitHub** and edit DIY's open source projects!
 
