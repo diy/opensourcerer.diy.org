@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Ignore system files */
 .DS_Store
 
@@ -11,3 +12,7 @@
 /* Ignore NPM */
 npm-debug.log
 /node_modules
+=======
+.DS_Store
+Thumbs.db
+>>>>>>> e70c24f5b73645deebe08cadeaf3a3f5392bdef5
