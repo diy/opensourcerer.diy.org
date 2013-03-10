@@ -1,6 +1,8 @@
 # Open Sourcerer Guide
 Web Guide for DIY's [Open Sourcerer Skill](http://www.diy.org/skills/opensourcerer). 
 
+*If you're looking for the repo to fork for the challenges in the skill, it's here [github.com/diy/open-sourcerer](http://www.github.com/diy/open-sourcerer)*
+
 ## Simply Speaking
 
 These are the files for the web guide DIY built to walk DIY makers through learning Git and GitHub and become a part of the awesome open source community. 
